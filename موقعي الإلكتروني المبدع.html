@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الإلكتروني المبدع</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f3f5;
+            color: var(--secondary-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: white;
+            transform: skewY(-3deg);
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 15px 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .contact-item {
+            flex-basis: calc(33.333% - 20px);
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>بسم الله الرحمن الرحيم</h1>
+        <img src="image-removebg-preview (1).png" alt="تكنو علي" class="logo">
+        <h2>أهلا بكم في موقعي الإلكتروني، حيث أستعرض مجموعة متنوعة من مهاراتي وإبداعاتي التقنية</h2>
+        <p>علي شرف الدين يرحب بكم</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">نبذة عني</a></li>
+            <li><a href="#skills">مهاراتي</a></li>
+            <li><a href="#contact">التواصل معي</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>نبذة عني</h2>
+            <p>مهاراتي بفضل الله سبحانه وتعالى: تصميم وقليل من المونتاج تصميم ملفات PDF تفاعلية, استخدام OBS, استخدام بعض خدمات قوقل وبرمجة (أدرس في دورة علوم الحاسوب من أكاديمية حسوب) في الطريق بإذن الله هذا والله أعلم</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>مهاراتي</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>تصميم ملفات</h3>
+                    <ul>
+                        <li>ملفات إرشادية</li>
+                        <li>الخطة التشغيلية</li>
+                        <li>تصميم الجدول</li>
+                        <li>تصميم ملفات PDF تفاعلية</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>خدمات Google</h3>
+                    <ul>
+                        <li>العروض التقديمية</li>
+                        <li>الاستبيانات واستخراج البيانات</li>
+                        <li>الجداول الممتدة</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>البرمجة</h3>
+                    <p>بالاستعانة بالذكاء الاصطناعي:</p>
+                    <ul>
+                        <li>البوتات</li>
+                        <li>تصميم البطاقات وإرسالها</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>استخدام OBS</h3>
+                    <p>برنامج يتحكم بما يعرض في الشاشات</p>
+                </div>
+                <div class="skill-card">
+                    <h3>الاستبيانات</h3>
+                    <p>تساهم في تسهيل الإجراءات المعتمدة على إدخال البيانات</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>التواصل معي</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>واتساب</h3>
+                    <a href="https://wa.me/+966148220842" target="_blank">
+                        <p>لتواصل معي<br>عبر.<br>وتساب.</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <h3>مستقل</h3>
+                    <a href="https://mostaql.com/u/aligame246" target="_blank">
+                        <p>حسابي<br>في منصة.<br>مستقل.</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <h3>خمسات</h3>
+                    <a href="https://khamsat.com/user/aligo_pro" target="_blank">
+                        <p>حسابي<br>في منصة.<br>خمسات.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('nav a, .contact-item a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (!link.href.startsWith('https://')) {
+                    e.preventDefault();
+                    document.querySelector(link.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

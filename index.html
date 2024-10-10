@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html dir="rtl" lang="ar">
-<head>
+<html dir="rtl" lang="ar"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>علي شرف الدين - مصمم وخبير تقني</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet">
     <meta name="description" content="علي شرف الدين - مصمم ملفات PDF تفاعلية، خبير في OBS، ومهتم بتقديم خدمات احترافية في مجال المونتاج والتصميم.">
     <style>
         :root {
             --primary-color: #3498db;
             --secondary-color: #2c3e50;
             --accent-color: #e74c3c;
+            --bg-light: #f8f9fa;
         }
 
         body {
@@ -26,29 +25,15 @@
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem 1rem;
             position: relative;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: white;
-            transform: skewY(-3deg);
         }
 
         header img {
-            width: 120px;
+            width: 100px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         nav {
@@ -65,16 +50,17 @@
             margin: 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
 
         nav ul li a {
             color: var(--secondary-color);
             text-decoration: none;
-            padding: 15px 10px;
+            padding: 10px;
             display: block;
             transition: color 0.3s;
         }
@@ -93,20 +79,20 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-bottom: 30px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
 
         .skill-card {
-            background-color: #f8f9fa;
+            background-color: var(--bg-light);
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
@@ -118,16 +104,16 @@
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            gap: 15px;
+            justify-content: center;
         }
 
         .contact-item {
-            flex-basis: calc(33.333% - 20px);
+            flex-basis: calc(33.333% - 10px);
             text-align: center;
-            padding: 20px;
-            background-color: #f8f9fa;
+            padding: 15px;
+            background-color: var(--bg-light);
             border-radius: 8px;
-            margin-bottom: 20px;
             transition: transform 0.3s;
         }
 
@@ -138,11 +124,13 @@
         .cta-button {
             background-color: var(--primary-color);
             color: white;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 10px;
         }
 
         .cta-button:hover {
@@ -151,12 +139,12 @@
 
         .portfolio {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
 
         .portfolio-item {
-            background: #f8f9fa;
+            background: var(--bg-light);
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -176,12 +164,29 @@
         }
 
         @media (max-width: 768px) {
-            .skills-grid, .portfolio {
-                grid-template-columns: 1fr;
+            header {
+                padding: 1rem 0.5rem;
             }
 
-            .contact-item {
-                flex-basis: 100%;
+            nav ul li {
+                margin: 0 5px;
+            }
+
+            nav ul li a {
+                padding: 8px;
+            }
+
+            .skill-card, .contact-item, .portfolio-item {
+                padding: 10px;
+            }
+
+            .contact-info {
+                gap: 10px;
+            }
+
+            .cta-button {
+                padding: 8px 10px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -191,7 +196,6 @@
         <h1>بسم الله الرحمن الرحيم</h1>
         <img src="image-removebg-preview (1).png" alt="تكنو علي" class="logo">
         <h2>أهلا بكم في موقعي الإلكتروني، حيث أستعرض مجموعة متنوعة من مهاراتي وإبداعاتي التقنية</h2>
-        <p>علي شرف الدين يرحب بكم</p>
         <a href="#contact" class="cta-button">تواصل معي الآن</a>
     </header>
 
@@ -240,10 +244,9 @@
                     <h3>تصميم ملف PDF تعليمي</h3>
                 </div>
                 <div class="portfolio-item">
-                    <img src="portfolio2.jpg" alt="خدمات OBS">
-                    <h3>إعداد بث مباشر باستخدام OBS</h3>
+                    <img src="portfolio2.jpg" alt="مشروع برمجي">
+                    <h3>مشروع برمجي باستخدام Python</h3>
                 </div>
-                <!-- أضف المزيد من الأعمال هنا -->
             </div>
         </section>
 
@@ -253,19 +256,19 @@
                 <div class="contact-item">
                     <h3>واتساب</h3>
                     <a href="https://wa.me/+966148220842" target="_blank">
-                        <p>تواصل معي<br>عبر<br>واتساب</p>
+                        <p>تواصل معي عبر واتساب</p>
                     </a>
                 </div>
                 <div class="contact-item">
                     <h3>مستقل</h3>
                     <a href="https://mostaql.com/u/aligame246" target="_blank">
-                        <p>حسابي<br>في منصة<br>مستقل</p>
+                        <p>حسابي على مستقل</p>
                     </a>
                 </div>
                 <div class="contact-item">
                     <h3>خمسات</h3>
                     <a href="https://khamsat.com/user/aligo_pro" target="_blank">
-                        <p>حسابي<br>في منصة<br>خمسات</p>
+                        <p>حسابي على خمسات</p>
                     </a>
                 </div>
             </div>
@@ -284,5 +287,6 @@
             });
         });
     </script>
-</body>
-</html>
+
+
+</body></html>

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الإلكتروني المبدع</title>
+    <title>علي شرف الدين - مصمم وخبير تقني</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="علي شرف الدين - مصمم ملفات PDF تفاعلية، خبير في OBS، ومهتم بتقديم خدمات احترافية في مجال المونتاج والتصميم.">
     <style>
         :root {
             --primary-color: #3498db;
@@ -45,7 +46,7 @@
         }
 
         header img {
-            width: 150px;
+            width: 120px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -134,8 +135,48 @@
             transform: scale(1.05);
         }
 
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-color);
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .portfolio-item h3 {
+            margin: 0;
+            padding: 10px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
-            .skills-grid {
+            .skills-grid, .portfolio {
                 grid-template-columns: 1fr;
             }
 
@@ -151,12 +192,14 @@
         <img src="image-removebg-preview (1).png" alt="تكنو علي" class="logo">
         <h2>أهلا بكم في موقعي الإلكتروني، حيث أستعرض مجموعة متنوعة من مهاراتي وإبداعاتي التقنية</h2>
         <p>علي شرف الدين يرحب بكم</p>
+        <a href="#contact" class="cta-button">تواصل معي الآن</a>
     </header>
 
     <nav>
         <ul>
             <li><a href="#about">نبذة عني</a></li>
             <li><a href="#skills">مهاراتي</a></li>
+            <li><a href="#portfolio">أعمالي</a></li>
             <li><a href="#contact">التواصل معي</a></li>
         </ul>
     </nav>
@@ -164,45 +207,43 @@
     <div class="container">
         <section id="about" class="section">
             <h2>نبذة عني</h2>
-            <p>مهاراتي بفضل الله سبحانه وتعالى: تصميم وقليل من المونتاج تصميم ملفات PDF تفاعلية, استخدام OBS, استخدام بعض خدمات قوقل وبرمجة (أدرس في دورة علوم الحاسوب من أكاديمية حسوب) في الطريق بإذن الله هذا والله أعلم</p>
+            <p>أعمل في مجال التصميم وإنشاء ملفات PDF تفاعلية، وأمتلك خبرة في المونتاج واستخدام OBS للاجتماعات الافتراضية والبث المباشر. كما أدرس البرمجة في دورة علوم الحاسوب من أكاديمية حسوب وأهدف لتطوير مهاراتي باستمرار.</p>
         </section>
 
         <section id="skills" class="section">
             <h2>مهاراتي</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>تصميم ملفات</h3>
-                    <ul>
-                        <li>ملفات إرشادية</li>
-                        <li>الخطة التشغيلية</li>
-                        <li>تصميم الجدول</li>
-                        <li>تصميم ملفات PDF تفاعلية</li>
-                    </ul>
+                    <h3>تصميم ملفات PDF</h3>
+                    <p>إنشاء ملفات تفاعلية لمختلف الأغراض، مثل الخطط التشغيلية والمواد التعليمية.</p>
                 </div>
                 <div class="skill-card">
                     <h3>خدمات Google</h3>
-                    <ul>
-                        <li>العروض التقديمية</li>
-                        <li>الاستبيانات واستخراج البيانات</li>
-                        <li>الجداول الممتدة</li>
-                    </ul>
+                    <p>استخدام العروض التقديمية، الاستبيانات، والجداول الممتدة بفعالية.</p>
                 </div>
                 <div class="skill-card">
                     <h3>البرمجة</h3>
-                    <p>بالاستعانة بالذكاء الاصطناعي:</p>
-                    <ul>
-                        <li>البوتات</li>
-                        <li>تصميم البطاقات وإرسالها</li>
-                    </ul>
+                    <p>إنشاء بوتات باستخدام الذكاء الاصطناعي وتصميم تطبيقات بسيطة لتحسين الإنتاجية.</p>
                 </div>
                 <div class="skill-card">
                     <h3>استخدام OBS</h3>
-                    <p>برنامج يتحكم بما يعرض في الشاشات</p>
+                    <p>إعداد البث المباشر للاجتماعات الافتراضية والتدريب على التحكم بالعرض.</p>
                 </div>
-                <div class="skill-card">
-                    <h3>الاستبيانات</h3>
-                    <p>تساهم في تسهيل الإجراءات المعتمدة على إدخال البيانات</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>أعمالي</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="portfolio1.jpg" alt="تصميم ملف PDF تفاعلي">
+                    <h3>تصميم ملف PDF تعليمي</h3>
                 </div>
+                <div class="portfolio-item">
+                    <img src="portfolio2.jpg" alt="خدمات OBS">
+                    <h3>إعداد بث مباشر باستخدام OBS</h3>
+                </div>
+                <!-- أضف المزيد من الأعمال هنا -->
             </div>
         </section>
 
@@ -212,19 +253,19 @@
                 <div class="contact-item">
                     <h3>واتساب</h3>
                     <a href="https://wa.me/+966148220842" target="_blank">
-                        <p>لتواصل معي<br>عبر.<br>وتساب.</p>
+                        <p>تواصل معي<br>عبر<br>واتساب</p>
                     </a>
                 </div>
                 <div class="contact-item">
                     <h3>مستقل</h3>
                     <a href="https://mostaql.com/u/aligame246" target="_blank">
-                        <p>حسابي<br>في منصة.<br>مستقل.</p>
+                        <p>حسابي<br>في منصة<br>مستقل</p>
                     </a>
                 </div>
                 <div class="contact-item">
                     <h3>خمسات</h3>
                     <a href="https://khamsat.com/user/aligo_pro" target="_blank">
-                        <p>حسابي<br>في منصة.<br>خمسات.</p>
+                        <p>حسابي<br>في منصة<br>خمسات</p>
                     </a>
                 </div>
             </div>
@@ -245,4 +286,3 @@
     </script>
 </body>
 </html>
-
